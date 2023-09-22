@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.root {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.c1 {
+    animation: rotate 15s infinite;
+    border: 5px solid green;
+}
+.c2 {
+    animation: rotate 10s infinite;
+    border: 5px solid red;
+}
+.c3 {
+    animation: rotate 20s infinite;
+    border: 5px solid blue;
+}
+.c4 {
+    animation: rotate2 15s infinite;
+    border: 5px solid yellow;
+}   
+@keyframes rotate {
+    100% {
+        transform: rotate3D(1,2,1,360deg);
+    }
+}
+@keyframes rotate2 {
+    100% {
+        transform: rotate3D(2,1,2,360deg);
+    }
+}
